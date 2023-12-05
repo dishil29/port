@@ -1,13 +1,263 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Trebuchet MS';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+  background-color: #f1ef79;
+  font-size: 16px;
+}
+.nav span{
+  font-size: 18px;
+}
+
+.nav .links {
+  margin-left: auto;
+}
+.nav a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.nav a:hover {
+  color: #f1356d;
+}
+
+
+body{
+  font-family: 'Trebuchet MS';
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: whitesmoke;
+}
+
+h1{
+  text-align: center;
+  font-size: 48px;
+  background-color: #f1ef79;
+  border-radius: 10px;
+  border: solid 2px white;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.Intro h4{
+  background-color: #f1ef79;
+  color: #f1356d;
+  text-align: center;
+  font-size: 28px;
+}
+.Skills h4{
+  background-color: #f1ef79;
+  color: #f1356d;
+}
+
+.Contact h4{
+  background-color: #f1ef79;
+  color: #f1356d;
+}
+
+.Intro .name{
+  text-align: center;
+  padding: 0px 200px;
+  font-size: 28px;
+}
+
+
+.Intro p{
+  font-size: 20px;
+  max-width: 85%;
+  margin: 20px auto;
+}
+
+.Intro p input{
+  text-align: center;
+  background-color: #f1ef79;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+.Project{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  justify-content: space-evenly;
+  font-size: 18px;
+}
+
+.Project h4{
+  min-width: 100%;
+  text-align: center;
+  font-size: 28px;
+}
+
+.Project div{
+  box-sizing: border-box;
+  text-align: center;
+  min-width: 45%;
+  max-width: 45%;
+  padding: 5px 10px;
+  background-color: #f1ef79;
+  font-size: 20px;
+  color: black;
+}
+
+
+
+.Project div h6{
+  font-size: 22px;
+}
+
+.Contact {
+  text-align: center;
+  min-width: 75%;
+  margin: 10px auto;
+  /*display: flex;
+  justify-content: space-evenly;
+  flex: 0 0 80%;
+  margin: 10px auto;
+  flex-wrap: wrap;*/
+}
+
+.Contact input{
+  border-radius: 25px;
+}
+.Contact textarea{
+  border-radius: 25px;
+}
+h4{
+  font-size: 28px;
+  text-align: center;
+  padding: 5px;
+  background-color: #f1ef79;
+  color: #f1356d;
+}
+.Contact a{
+  text-decoration: none;
+  color: black;
+}
+
+.Contact a:hover{
+  color: rgb(47, 0, 255);
+}
+
+.Intro span a img{
+  max-width: 32px;
+  max-height: 32px;
+  margin: 0px 20px;
+}
+.Intro .ig img{
+  max-width: 45px;
+  max-height: 45px;
+}
+
+.Skills article{
+  display: flex;
+  flex: 0 0 30%;
+  justify-content: space-evenly;
+}
+
+.Skills article p img{
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.Skills article p {
+  font-size: 24px;
+  text-align: center;
+}
+
+@media screen and (max-width:860px) {
+  .Intro .name{
+    padding-right: 40px;
+    padding-left: 100px;
+  }
+  .Project div h6{
+    font-size: 20px;
+    font-weight: normal;
+  }
+  .Project div {
+    font-size: 18px;
+  }
+  .Project div{
+    min-width: 80%;
+    max-width: 80%;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width:610px) {
+  .Intro{
+    position: absolute;
+  }
+  .Intro .ig img{
+    margin-right: 10px;
+  }
+  .Intro .ig{
+    position: absolute;
+    right: 0px;
+    top: 120px;
+    margin-right: 2px;
+  }
+  .Intro .fb{
+    position: absolute;
+    right: 0px;
+    top: 45px;
+    margin-right: 0px;
+  }
+  .Intro .mail{
+    position: absolute;
+    right: 0px;
+    top: 84px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .nav span{
+    min-width: 80%;
+    margin: auto;
+    
+    margin-bottom: 8px;
+  }
+  .nav{
+    flex-wrap: wrap;
+    text-align: center;
+    flex-grow: 1;
+  }
+  .nav .links{
+    margin-left: 10px;
+    min-width: 80px;
+    text-align: center;
+    flex-grow: 1;
+  }
+  .nav{
+    padding: 10px;
+  }
+  .nav a{
+    margin: 4px;
+  }
+  .Intro .name{
+    padding-left: 40px;
+    padding-right: 0px;
+  }
+  .Skills article{
+    flex-wrap: wrap;
+    flex: 0 0 80%;
+  }
+  .Skills article p {
+    max-width: 80%;
+    min-width: 80%;
+    margin: 15px auto;
+  }
 }

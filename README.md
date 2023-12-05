@@ -1,4 +1,15 @@
-# Getting Started with Create React App
+To run the file,
+  Get all the resources in a folder 
+  Download the required modules using the "npm install" in command prompt
+  For this you should have a nodeJS installed in your computer with version 16 and above
+  In case you can download the node from the the browser first.
+
+  Open the directory with the project in Command Prompt
+  After this launch a web server using "npm run start" 
+  It will create a local server and you will be able to view the page on the browser.
+
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +78,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
